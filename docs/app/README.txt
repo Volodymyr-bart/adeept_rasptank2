@@ -1,0 +1,1 @@
+You can also download APP in IOS APP Store or Google Play, Seach "Adeept"
