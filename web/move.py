@@ -29,6 +29,10 @@ left_backward = 0
 right_forward = 0
 right_backward= 1
 
+# Speed trim (%) to drive straight: reduce the faster track's motor.
+M1_TRIM = 0
+M2_TRIM = 5
+
 TL_LEFT_Offset = 10
 TL_RIGHT_Offset = 0
 
@@ -79,6 +83,10 @@ def motorStop():#Motor stops
 
 def Motor(channel,direction,motor_speed):
     # channel,1~4:M1~M4
+  if channel == 1:
+    motor_speed -= M1_TRIM
+  elif channel == 2:
+    motor_speed -= M2_TRIM
   if motor_speed > 100:
     motor_speed = 100
   elif motor_speed < 0:
