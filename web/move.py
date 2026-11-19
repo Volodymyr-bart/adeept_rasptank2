@@ -31,8 +31,8 @@ right_forward = 0
 right_backward= 1
 
 # Speed trim (%) to drive straight: reduce the faster track's motor.
-M1_TRIM = 10
-M2_TRIM = 0
+M1_TRIM = 0
+M2_TRIM = 10
 
 TL_LEFT_Offset = 10
 TL_RIGHT_Offset = 0
