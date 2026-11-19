@@ -11,10 +11,11 @@ import busio
 from adafruit_pca9685 import PCA9685
 from adafruit_motor import motor
 
-MOTOR_M1_IN1 =  15      #Define the positive pole of M1
-MOTOR_M1_IN2 =  14      #Define the negative pole of M1
-MOTOR_M2_IN1 =  12      #Define the positive pole of M2
-MOTOR_M2_IN2 =  13      #Define the negative pole of M2
+# M1/M2 channels swapped so left/right turns match the controls (tracks were wired the other way round)
+MOTOR_M1_IN1 =  12      #Define the positive pole of M1 (physical port M2)
+MOTOR_M1_IN2 =  13      #Define the negative pole of M1 (physical port M2)
+MOTOR_M2_IN1 =  15      #Define the positive pole of M2 (physical port M1)
+MOTOR_M2_IN2 =  14      #Define the negative pole of M2 (physical port M1)
 MOTOR_M3_IN1 =  11      #Define the positive pole of M3
 MOTOR_M3_IN2 =  10      #Define the negative pole of M3
 MOTOR_M4_IN1 =  8       #Define the positive pole of M4
@@ -30,8 +31,8 @@ right_forward = 0
 right_backward= 1
 
 # Speed trim (%) to drive straight: reduce the faster track's motor.
-M1_TRIM = 0
-M2_TRIM = 5
+M1_TRIM = 5
+M2_TRIM = 0
 
 TL_LEFT_Offset = 10
 TL_RIGHT_Offset = 0
