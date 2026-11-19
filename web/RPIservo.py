@@ -26,7 +26,7 @@ init_pwm1 = 90
 init_pwm2 = 90
 init_pwm3 = 90
 
-init_pwm4 = 95
+init_pwm4 = 100
 init_pwm5 = 90
 init_pwm6 = 90
 init_pwm7 = 90
