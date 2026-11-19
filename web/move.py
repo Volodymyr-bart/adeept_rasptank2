@@ -95,7 +95,7 @@ def Motor(channel,direction,motor_speed):
   speed = map(motor_speed, 0, 100, 0, 1.0)
 
   # setup() 
-  pwm_motor.frequency = FREQ
+  # pwm_motor.frequency = FREQ  # disabled: rewriting PCA9685 frequency on every command glitches servo signals (camera jitter)
   # Prevent the servo from affecting the frequency of the motor
   if direction == -1:
     speed = -speed
