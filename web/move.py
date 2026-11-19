@@ -20,8 +20,8 @@ MOTOR_M3_IN2 =  10      #Define the negative pole of M3
 MOTOR_M4_IN1 =  8       #Define the positive pole of M4
 MOTOR_M4_IN2 =  9       #Define the negative pole of M4
 
-M1_Direction   = 1
-M2_Direction  = 1
+M1_Direction   = -1
+M2_Direction  = -1
 
 left_forward  = 1
 left_backward = 0

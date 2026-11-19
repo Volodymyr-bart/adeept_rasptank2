@@ -49,7 +49,7 @@ class ServoCtrl(threading.Thread):
         self.pwm_servo.frequency = 50
 
         
-        self.sc_direction = [1,1,1,1, 1,1,1,1]
+        self.sc_direction = [1,-1,1,1, 1,1,1,1]
         # # If motors are not used, 16 servos need to be controlled at the same time.
         # self.sc_direction = [1,1,1,1, 1,1,1,1, 1,1,1,1, 1,1,1,1] 
         self.initPos = [init_pwm0,init_pwm1,init_pwm2,init_pwm3,
